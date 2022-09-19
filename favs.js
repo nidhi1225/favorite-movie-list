@@ -12,12 +12,6 @@ if(localStorage.favArray){
 
     
 }
-// if(main.childNodes.length == 0){
-//     let display = document.createElement('h1');
-//     display.innerText = `No Favourite item to show!`
-//     main.appendChild(display)
-   
-// }
 
 
 
@@ -71,25 +65,19 @@ function getMovie(element){
                                     <div class="movieName"><h3>${element.Title}</div>    
                                 </div>
                      </a>`
-                           
 
-                            // <div class="favIcon" id="${element.imdbID}"  onclick='favCheck("${element.imdbID}")'><span class="material-symbols-outlined">favorite</span></div>`
                             if(favArray.includes(element.imdbID)){
                                 card.innerHTML += `<div class="favIcon" id="${element.imdbID}"  onclick='favCheck("${element.imdbID}")'><span class="material-symbols-outlined fill">favorite</span></div>`
                             }else{
                                 card.innerHTML += `<div class="favIcon" id="${element.imdbID}"  onclick='favCheck("${element.imdbID}")'><span class="material-symbols-outlined">favorite</span></div>`
                             }
                             main.appendChild(card);
-    // let carddocument.getElementsByClassName('card').addEventListener('click', showDetails(element.imdbID))
     
                         
 }
 
 function favCheck(id){
-    // const foo = document.querySelector('#foo')  
-    // foo.addEventListener('click', (event) => {  
-    // id.preventDefault();  
-// });
+
     const favBtn = document.getElementById(id)
     // console.log(favBtn.childNodes[0])
     if(favArray.includes(id)){

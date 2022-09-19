@@ -41,15 +41,6 @@ async function fetchMovie() {
     }
     // console.log(movies)
    await getMovie(movies);
-  
-//    for(let i=0 ; i< cards.length ; i++){
-//     cards[i].addEventListener('click', function(){
-//         let idElement = document.getElementsByClassName('hide')[i]
-//         // console.log(idElement.innerText)
-//     })
-//    
-// 
-// }
    
     }
 }
@@ -71,23 +62,17 @@ function getMovie(movies){
                                 </div>
                      </a>`
                            
-
-                            // <div class="favIcon" id="${element.imdbID}"  onclick='favCheck("${element.imdbID}")'><span class="material-symbols-outlined">favorite</span></div>`
                             if(favArray.includes(element.imdbID)){
                                 card.innerHTML += `<div class="favIcon" id="${element.imdbID}"  onclick='favCheck("${element.imdbID}")'><span class="material-symbols-outlined fill">favorite</span></div>`
                             }else{
                                 card.innerHTML += `<div class="favIcon" id="${element.imdbID}"  onclick='favCheck("${element.imdbID}")'><span class="material-symbols-outlined">favorite</span></div>`
                             }
                             main.appendChild(card);
-    // let carddocument.getElementsByClassName('card').addEventListener('click', showDetails(element.imdbID))
     
 });
 }
 function favCheck(id){
-    // const foo = document.querySelector('#foo')  
-    // foo.addEventListener('click', (event) => {  
-    // id.preventDefault();  
-// });
+
     const favBtn = document.getElementById(id)
     // console.log(favBtn.childNodes[0])
     if(favArray.includes(id)){
@@ -107,21 +92,6 @@ function favCheck(id){
     localStorage.setItem("favArray", JSON.stringify(favArray));
 }
 // console.log(cards
-
-// for(let i=0 ; i< cards.length ; i++){
-//     cards[i].addEventListener('click', function(){
-//         console.log(cards[i])
-//     })
-   
-
-// }
-    
-
-// function showDetails(){
-//     const url = window.location.href
-// }
-
-
 
    
 

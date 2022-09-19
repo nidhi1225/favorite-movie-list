@@ -12,7 +12,6 @@ nav {
     width: 100%;
     background-color: darkslategray;
     display: flex;
-    /* justify-content: space-around; */
     align-items: center;
     margin-bottom: 20px;
 
@@ -77,7 +76,6 @@ nav {
     height: 360px;
     background-color: darkslategray;
     border-radius: 0 0 21px 21px;
-    /* border: 2px solid black; */
     margin-bottom: 15px;
     position: relative;
 }
@@ -85,8 +83,7 @@ nav {
     
     width: 250px;
     height: 250px;
-    /* background-color: black; */
-    /* border: 2px solid brown; */
+
 }
 .cardImage{
     width: 100%;
@@ -97,10 +94,8 @@ nav {
     
     display: flex;
     margin-left: 15px;
-    /* justify-content: fle; */
     padding-top: 17px;
 
-    /* align-items: flex-end; */
     color:white;
 
 }
@@ -181,7 +176,6 @@ nav {
         background-color: aqua;
     }
     .movie-details-container{
-        /* margin: auto; */
         width: 100%;
         height: auto;
         
@@ -233,9 +227,6 @@ nav {
 }
 
 
-/* fav btn */
-
-
 .material-symbols-outlined {
     font-size: 35px;
   font-variation-settings:
@@ -264,7 +255,6 @@ nav {
 }
 .movie-mini-details > span{
     vertical-align: middle;
-    /* margin-right: 20px; */
 }
 .movie-mini-details .material-symbols-outlined{
 
