@@ -1,0 +1,286 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav {
+    height: 70px;
+    width: 100%;
+    background-color: darkslategray;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+.logo {
+    margin: 12px 10px;
+    width: 50px;
+    height: 40px;
+
+}
+.logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; 
+}
+#deatils-nav-logo{
+    margin-right: auto;
+}
+#searchNDfav{
+    display: flex;
+    margin: auto;
+    width: 70%;
+}
+
+#search-bar{
+    margin: auto;
+    width: 35%;
+    height: 29px;
+    border-radius: 13px;
+    border: 0px solid transparent;
+    padding-left: 12px ;
+}
+
+#my-favs{
+    border-radius: 9px;
+    color: rgb(212, 212, 212);
+    font-weight: 400;
+    border: 2px solid white;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-right: 10px;
+    
+}
+#my-favs:hover{
+    background-color: white;
+    color: darkslategray;
+}
+
+#main{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: baseline;
+    width: 250px;
+    height: 360px;
+    background-color: darkslategray;
+    border-radius: 0 0 21px 21px;
+    /* border: 2px solid black; */
+    margin-bottom: 15px;
+    position: relative;
+}
+.cardImageContainer{
+    
+    width: 250px;
+    height: 250px;
+    /* background-color: black; */
+    /* border: 2px solid brown; */
+}
+.cardImage{
+    width: 100%;
+    height: 100%;
+}
+
+.cardDetails{
+    
+    display: flex;
+    margin-left: 15px;
+    /* justify-content: fle; */
+    padding-top: 17px;
+
+    /* align-items: flex-end; */
+    color:white;
+
+}
+
+.favIcon{
+    
+    color: white;
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+    cursor: pointer;
+}
+.movieName{
+    width: 170px;
+}
+
+.hide{
+    display:none
+}
+
+
+/* details page */
+.flex{
+    width: 50px;
+    height: 40px;
+    margin-right: 90%;
+}
+.flex img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.details-page-container{
+    position: relative;
+    color: white;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+    
+}
+
+.movie-poster{
+    width: 30%;
+    height: 500px;
+    background-color: aqua;
+}
+.poster-image{
+   
+    width: 100%;
+    height: 100%;
+}
+.movie-details-container{
+    width: 70%;
+    height: 500px;
+    background-color: #2f4f4f;
+    
+}
+.movie-details{
+    width: 88%;
+    padding-left: 10% ;
+}
+.details-favIcon{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    
+
+    .movie-poster{
+        width: 100%;
+        height: 500px;
+        background-color: aqua;
+    }
+    .movie-details-container{
+        /* margin: auto; */
+        width: 100%;
+        height: auto;
+        
+        
+    }
+    
+    .movie-details{
+        padding-left: 20px;
+        width: 90%;
+        height: 500px;
+        padding-bottom: 30px;
+        
+    }
+    .details-favIcon{
+        
+        position: absolute;
+        right: 10px;
+        top: 525px;
+        cursor: pointer;
+    }
+
+    #my-favs{
+        width:75px;
+        font-size: 10px;
+        border: 1px solid white;
+        text-align: center;
+    }
+    .logo {
+        margin: 5px 0px 0px 10px;
+        width: 30px;
+        height: 30px;
+    
+    }
+    #searchNDfav{
+        display: flex;
+        margin: auto;
+        width: 70%;
+    }
+    
+    #search-bar{
+        margin: auto;
+        width: 50%;
+        height: 29px;
+        border-radius: 13px;
+        border: 0px solid transparent;
+        padding-left: 12px ;
+    }
+    
+}
+
+
+/* fav btn */
+
+
+.material-symbols-outlined {
+    font-size: 35px;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+.material-symbols-outlined:hover {
+    transform: scale(1.2);
+    font-variation-settings:
+    'FILL' 1
+
+  }
+.fill{
+    font-variation-settings:
+    'FILL' 1
+
+}
+
+.movie-mini-details{
+
+    
+    color: rgb(140, 137, 137);
+
+}
+.movie-mini-details > span{
+    vertical-align: middle;
+    /* margin-right: 20px; */
+}
+.movie-mini-details .material-symbols-outlined{
+
+    font-size: 20px;
+}
+
+.movie-details-description{
+    font-size: large;
+    font-family: sans-serif;
+    word-spacing: 5px;
+    line-height: 25px;
+    margin-bottom: 40px;
+}
+
+
+
+.pb-20{
+    padding-bottom: 20px;
+}
